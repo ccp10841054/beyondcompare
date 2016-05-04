@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Spaltendefinition bearbeiten</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?dlgdatacolhandling.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">Spaltendefinition bearbeiten</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p>Der Dialog für Spaltenbehandlung erlaubt Ihnen Optionen für jede Vergleichsspalte zu setzen.  Es gibt einen Teildialog dieses Dialoges, der für die Einstellung der Standardbehandlung für Spalten verwendet wird.</p>
+<p>Geben Sie <span class="f_Command">Name</span> an, der im Vergleichspaltenkopf angezeigt werden soll.  Wenn kein Name angegeben wurde, wird ein automatisch generierter verwendet.</p>
+<p>Markieren Sie das Kontrollkästchen <span class="f_Command">Schlüssel</span>, um Daten dieser Spalte zur Steuerung der Sortierung und Vergleichsausrichtung zu verwenden.  Sollten Sie mehr als eine Schlüsselspalte haben, wird den obersten Spalten in der Liste die Sortierpriorität gewährt.</p>
+<p>Markieren Sie das Kontrollkästchen <span class="f_Command">Standard verwenden</span>, um die Standardspaltenbehandlung zu verwenden, wie sie für diese Sitzung definiert ist.</p>
+<p>Wählen Sie den passenden <span class="f_Command">Typ</span> für die Spalte:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="78" style="width:78px;"><p class="p_Command"><span class="f_Command">Erkannt</span></p>
+</td>
+<td valign="top"><p>Erkennt automatisch den Spaltentyp, basierend auf den Daten in der Datei.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="78" style="width:78px;"><p class="p_Command"><span class="f_Command">Boolean</span></p>
+</td>
+<td valign="top"><p>Spaltenwerte sind entweder "True" (wahr) oder "False" (falsch), oder numerisch.  Eine Null ist gleichbedeutend mit "False" und jeder Wert ungleich 0 ist äquivalent zu "True".</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="78" style="width:78px;"><p class="p_Command"><span class="f_Command">Datum</span></p>
+</td>
+<td valign="top"><p>Spalte enthält Datums- bzw. Zeitangaben, in jedem gängigen Format.  Der Vergleich ignoriert Formatierungsunterschiede.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="78" style="width:78px;"><p class="p_Command"><span class="f_Command">Numerisch</span></p>
+</td>
+<td valign="top"><p>Spaltenwerte werden als "reelle Zahlen" interpretiert.  Der Vergleich ignoriert Formatierungsunterschiede.  Zum Beispiel: 0,00 und 0 werden als identisch angesehen.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="78" style="width:78px;"><p class="p_Command"><span class="f_Command">Text</span></p>
+</td>
+<td valign="top"><p>Spalte enthält Text bzw. Zeichenfolgen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Markieren Sie das Kontrollkästchen <span class="f_Command">Unwichtig</span>, um zu kennzeichnen, dass diese Spalte für den Vergleich unwichtig ist.  (Unwichtige Unterschiede werden blau gefärbt statt rot, oder sie werden bei Verwendung der Option <span class="f_Command">Unwichtige Unterschiede ignorieren</span> <img src="insigignored.jpg" width="16" height="16" border="0" alt=""> vollständig ignoriert.)</p>
+<p>Verwenden Sie <span class="f_Command">Datumstoleranz</span>, damit Datums- bzw. Zeitangaben dieser Spalte um den angegebenen Betrag abweichen dürfen, bevor sie als wichtiger bzw. signifikanter Unterschied angesehen werden.</p>
+<p>Setzen Sie einen Wert für <span class="f_Command">Numerische Toleranz</span>, damit die Zahlenwerte dieser Spalte um den angegebenen Betrag abweichen dürfen, bevor sie als wichtiger bzw. signifikanter Unterschied angesehen werden.</p>
+<p>Die Option <span class="f_Command">Text wichtig, außer</span> betrifft Spalten, die als Text erkannt oder definiert wurden.  Markieren Sie das Kontrollkästchen <span class="f_Command">Groß-/Kleinschr. (ABC = abc)</span>, wenn Unterschiede hinsichtlich Groß-/Kleinschreibung als unwichtig angesehen werden sollen.  Markieren Sie das Kontrollkästchen <span class="f_Command">Leerzeichen (Whitespace)</span>, wenn Unterschiede hinsichtlich Leerzeichen (Anzahl der Leerzeichen vor, hinter oder zwischen Wörtern) als unwichtig angesehen werden sollen.</p>
+
+</td></tr></table>
+
+</body>
+</html>

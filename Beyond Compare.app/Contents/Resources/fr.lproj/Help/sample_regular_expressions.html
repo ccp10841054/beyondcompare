@@ -1,0 +1,173 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Exemples d'expressions régulières</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="expressions régulières" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?sample_regular_expressions.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Exemples d'expressions régulières</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <img src="prev-dis.png" border=0 alt="Previous"
+        ><a href="welcome.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><img src="next-dis.png" border=0 alt="Next">
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Expression</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^abc</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente "abc" en début de ligne</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">abc$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente "abc" en fin de ligne</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^abc$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente exactement la ligne "abc"</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^\s*abc</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente "abc" en début de la ligne, mais autorise des espaces blancs devant</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^\s*end;?\s*$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente une ligne contenant uniquement "end" ou "end;" avec des espaces blancs au début ou à la fin</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">abc|def</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente soit "abc", soit "def"</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">a(b|c)d</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente "abc" ou "acd"</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">a(b|c)d\1</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Représente "abdb" ou "acdc", mais pas "abdc"</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle" style="margin: 0px 0px 0px 0px;"><span class="f_Subtitle">&nbsp;</span></p>
+<p class="p_Subtitle"><span class="f_Subtitle">Caractères de contrôle utilisés dans les exemples ci-dessus</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Caractère</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Début de ligne</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Fin de ligne</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\s</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Espace blanc (une tabulation ou un espace)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">*</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Zéro ou plusieurs fois le caractère précédent</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Le caractère précédent est facultatif</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">|</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Expression alternative</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">( )</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Sous-expressions</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\1</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Référence arrière vers la 1ère sous-expression</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 0px 0px;">&nbsp;</p>
+<p class="p_SingleSpaced"><span style="font-weight: bold;">Voir également</span></p>
+<p class="p_SingleSpaced" style="margin: 0px 0px 14px 0px;"><a href="regular_expression_reference.html">Référence d'Expression régulière</a></p>
+
+</td></tr></table>
+
+</body>
+</html>

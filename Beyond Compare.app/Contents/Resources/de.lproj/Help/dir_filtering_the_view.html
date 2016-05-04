@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Die Ordnervergleichsansicht filtern</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Anzeigefilter,Dateifilter,Filter,ignorieren,ignorieren Ordnerstruktur" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?dir_filtering_the_view.html"; }
+  else { parent.quicksync('a2.2.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Die Ordnervergleichsansicht filtern</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="dir_how_to_compare.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="viewdir.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="dir_reconciling_differences.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Es gibt drei Arten von Filtern, die Sie im Umfeld eines Ordnervergleichs anwenden können:  <span class="f_Definition">Dateifilter</span>, die Dateien basierend auf ihren Namen oder Attributen ein- oder ausschließen, <span class="f_Definition">Anzeigefilter</span>, die basierend auf dem Vergleichszustand Zeilen ein- oder ausblenden können, und <span class="f_Definition">Ordneranzeigefilter</span>, die die Sichtbarkeit von Ordnern steuern.</p>
+<p>Beispielsweise können Sie den Anzeigefilter auf <span class="f_Command">Ansicht &gt; Linksseitig Neuere anzeigen</span> <img src="dirfavleftnewer.jpg" width="16" height="16" border="0" alt=""> setzen, um nur jene Dateien anzeigen zu lassen, die auf der linken Seite des Vergleichs neuer sind.  Oder Sie können einen Dateifilter zum Ausschließen von *.bak-Dateien setzen, falls Sie diese weder sehen noch ändern möchten.</p>
+<p>Standardmäßig werden Befehle, die auf ausgewählten Ordnerinhalten angewendet werden (wie Kopieren, Verschieben, Löschen usw.) die aktuellen Filter beachten.  Das heißt, wenn eine Auswahl einen Ordner enthält, wird dessen herausgefilterter Inhalt übersprungen.  Um dieses Standardverhalten zu ändern, wählen Sie <span class="f_Command">Extras &gt; Optionen</span> <img src="options.jpg" width="16" height="16" border="0" alt="">, wechseln zur Seite <span class="f_Command">Dateioperationen</span> und markieren das Kontrollkästchen <span class="f_Command">Versteckte Dateien standardmäßig einbeziehen</span>.  In jedem Fall werden Ihnen Dialoge ermöglichen, dass Standardverhalten von Fall zu Fall abzulehnen.</p>
+<p>Wählen Sie <span class="f_Command">Ansicht &gt; Filter unterdrücken</span> <img src="suppressfilters.jpg" width="16" height="16" border="0" alt="">, um zeitweise die Datei- und Anzeigefilter abzuschalten.  Jene Dateien und Ordner, die zuvor ausgeblendet waren, werden nun in türkis (blau-grün) erscheinen, und können verarbeitet werden.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Dateifilter</span></p>
+<p>Sie können jene Dateitypen bestimmen, die Sie in die Sitzung einbeziehen (oder von ihr ausschließen) möchten.  Zum Beispiel: wenn Sie Delphi-Projekte vergleichen, sollten Sie Dateitypen wie *.pas, *.dfm und *.dpr einbeziehen.  Oder Sie können alle Dateien einschließen außer *.dcu und *.~*, indem Sie diese Dateitypen ausschließen.</p>
+<p>Um einen einfachen "Diese-Typen-einbeziehen"-Filter zu erstellen, benutzen Sie das Symbolleisteneingabefeld <span class="f_Command">Filter</span>.  Geben Sie die Dateitypen semikolongetrennt an, oder verwenden Sie die aufklappbare Liste, um Voreinstellungen auszuwählen.  Stellen Sie den Dateien ein Minuszeichen (-) voran, um sie auszuschließen.</p>
+<p><img src="toolbarfilefilters.png" width="309" height="27" border="0" alt=""></p>
+<p>Zusätzlich zu diesen einfachen "Wildcard"-Filtern ist es möglich, auch komplexere Filter zu erstellen, die Dateien oder Ordner nach Namen ein- oder ausschließen.  Wählen Sie <span class="f_Command">Sitzung &gt; Sitzungseinstellungen</span> <img src="sessionedit.jpg" width="16" height="16" border="0" alt=""> und wechseln Sie zum <span class="f_Command">Namenfilter</span>-Tab.  Oder drücken Sie einfach die Schaltfläche <span class="f_Command">Filter</span> <img src="filters.jpg" width="16" height="16" border="0" alt=""> auf der Symbolleiste.</p>
+<p>Dateien können auch nach ihrem Änderungsdatum, ihrer Größe oder ihren Dateiattributen gefiltert werden.  Wechseln Sie im Dialog für Sitzungseinstellungen auf den Tab <span class="f_Command">Andere Filter</span>.  (Ordner werden nicht direkt aufgrund ihrer Attribute gefiltert, sind jedoch durch das Filtern ihres Inhaltes betroffen.)</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Anzeigefilter</span></p>
+<p>Anzeigefilter beschränken die Ansicht auf bestimmte Vergleichsergebnisse.  Vergleichsergebnisse entstehen aufgrund der Sitzungsvergleichsregeln.  Beispielsweise können Sie <span class="f_Command">Ansicht &gt; Unterschiede anzeigen</span> <img src="favdiff.jpg" width="16" height="16" border="0" alt=""> auswählen, um alle identischen Dateien auszublenden, so dass Sie sich auf die Unterschiede konzentrieren können.</p>
+<p style="margin: 10px 0px 14px 0px;"><span class="f_Subtitle">Ordneranzeigefilter</span></p>
+<p>Standardmäßig erscheinen Ordner nur, wenn mindestens eine enthaltene Datei sichtbar ist.  Sie können jedoch zu einem der anderen Ordneranzeigefilter wechseln.</p>
+<p><span class="f_Command">Ansicht &gt; Ordner immer zeigen</span> <img src="dirshowall.jpg" width="16" height="16" border="0" alt=""> führt dazu, dass alle Ordner erscheinen (es sei denn, sie werden explizit von Dateifiltern ausgeschlossen), unabhängig von der Auswahl anderer Anzeigefilter.</p>
+<p><span class="f_Command">Ansicht &gt; Dateien und Ordnerstruktur vergleichen</span> <img src="dircomparestructure.jpg" width="16" height="16" border="0" alt=""> führt dazu, dass Ordner die Anzeigefilter beachten.  Zum Beispiel: Wenn der Hauptanzeigefilter <span class="f_Command">Alle zeigen</span> <img src="favall.jpg" width="16" height="16" border="0" alt=""> ist, erscheinen alle Ordner.  Ist es jedoch <span class="f_Command">Singles anzeigen</span> <img src="dirfavorphan.jpg" width="16" height="16" border="0" alt="">, so werden nur Ordner-Singles und Ordner mit Datei-Singles angezeigt.</p>
+<p><span class="f_Command">Ansicht &gt; Nur Dateien vergleichen</span> <img src="dircomparefilesonly.jpg" width="16" height="16" border="0" alt=""> unterdrückt alle leeren Ordner, sowohl tatsächlich leere Ordner als auch jene Ordner, deren gesamter Inhalt durch andere Anzeige- oder Dateifilter verborgen wurde.</p>
+<p><span class="f_Command">Ansicht &gt; Ordnerstruktur ignorieren (Glätten)</span> <img src="dirflatten.jpg" width="16" height="16" border="0" alt=""> verbirgt die Ordnerbaumstruktur und richtet Dateien aneinander aus, ohne Rücksicht darauf, in welchen Unterordnern sie sich befinden.</p>
+<p class="p_SingleSpaced"><span style="font-weight: bold;">Siehe auch</span></p>
+<p class="p_SingleSpaced"><a href="sessiondirnamefilter.html">Ordnervergleich - Namenfilter</a></p>
+<p class="p_SingleSpaced"><a href="sessiondirotherfilters.html">Ordnervergleich - Andere Filter</a></p>
+<p class="p_SingleSpaced"><a href="display_filters.html">Anzeigefilter</a></p>
+
+</td></tr></table>
+
+</body>
+</html>

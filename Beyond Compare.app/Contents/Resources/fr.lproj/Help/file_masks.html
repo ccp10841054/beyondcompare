@@ -1,0 +1,152 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Masques de fichier</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="masques de fichier" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?file_masks.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">Masques de fichier</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p>Un masque de fichier est une séquence de caractères "normaux" et de caractères génériques utilisée pour faire correspondre des noms de dossier et de fichier.</p>
+<p>Exemple :  *.* correspond à n'importe quel nom de fichier.  Pour des raisons historiques, il correspond même aux fichiers qui n'ont pas d'extension.</p>
+<p>Exemple :  *.html correspond à n'importe quel nom de fichier HTML.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Caractères génériques</span></p>
+<p>Des caractères génériques permettent à un masque de fichier de faire correspondre de multiples noms de fichier ou de dossier.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>?</p>
+</td>
+<td valign="top"><p>Correspond à un seul caractère.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>*</p>
+</td>
+<td valign="top"><p>Correspond à 0 ou n'importe quel autre nombre de caractères.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[az]</p>
+</td>
+<td valign="top"><p>Correspond à tout caractère dans l'ensemble (a ou z).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[a-z]</p>
+</td>
+<td valign="top"><p>Correspond à tout caractère dans la plage (de a à z).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[!az]</p>
+</td>
+<td valign="top"><p>Correspond à tout caractère non dans l'ensemble (pas a et pas z).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[[]</p>
+</td>
+<td valign="top"><p>Correspond à tout caractère [.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Exemple :  A? correspondra à A suivi de tout caractère unique.</p>
+<p>Exemple :  A* correspondra à A suivi de n'importe quel nombre de caractères.</p>
+<p>Exemple :  [a-z0-9] correspondra à n'importe quel chiffre ou lettre.</p>
+<p>Exemple :  [!ac-g] correspondra à n'importe quel caractère excepté a, c, d, e, f et g.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Masques simples de fichier</span></p>
+<p>Les masques simples de fichier affecteront tous les fichiers et dossiers dont le dossier parent est inclus.  Le dossier de base est toujours inclus.  Tous les dossiers qui contiennent des fichiers inclus sont aussi inclus.</p>
+<p>Pour exclure plutôt qu'inclure les éléments spécifiés, ajoutez un singe moins (-) en tête du masque de fichier dans le champ <span class="f_Command">Filtres</span>.  Dans le dialogue Filtres de fichier, placez le masque de fichier dans le champ Exclure au lieu d'utiliser le signe moins.</p>
+<p>Si le dernier caractère d'un masque de fichier est un point (.), alors les caractères génériques ? et * ne correspondront pas aux points pour permettre le filtrage des fichiers qui n'ont pas d'extension.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>f</p>
+</td>
+<td valign="top"><p>Inclure tout fichier nommé f.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>p\</p>
+</td>
+<td valign="top"><p>Inclure tout dossier nommé p.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>-f</p>
+</td>
+<td valign="top"><p>Exclure tout fichier nommé f.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>-p\</p>
+</td>
+<td valign="top"><p>Exclure tout dossier nommé p.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Exemple :  *.pas;*.dfm;*dpr inclurait seulement les fichiers avec pas, dfm ou dpr comme extension.</p>
+<p>Exemple :  Source\ inclurait seulement les dossiers nommés Source et leurs sous-dossiers.</p>
+<p>Exemple :  -*.dcu;-*.ddp exclurait les fichiers avec dcu et ddp comme extension.</p>
+<p>Exemple :  -Sauvegarde\ exclurait les dossiers nommés Sauvegarde.</p>
+<p>Exemple :  *. inclura uniquement les fichiers sans extension.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Masques relatifs de fichier</span></p>
+<p>Les masques relatifs de fichier affectent les fichiers et les dossiers qui sont dans des endroits spécifiques.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>p\f</p>
+</td>
+<td valign="top"><p>f doit être dans le dossier p.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>.\f</p>
+</td>
+<td valign="top"><p>f doit être dans le dossier de base.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>...\f</p>
+</td>
+<td valign="top"><p>f doit avoir zéro ou plusieurs dossiers parents.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Exemple :  Windows\*.txt affecterait n'importe quel fichier texte de n'importe quel dossier inclus nommé Windows.</p>
+<p>Exemple :  ...\Windows\*.txt affecterait n'importe quel fichier texte de n'importe quel dossier nommé Windows.</p>
+<p>Exemple :  .\Windows\*.txt affecterait n'importe quel fichier texte d'un dossier nommé Windows qui est dans le dossier de base.</p>
+
+</td></tr></table>
+
+</body>
+</html>

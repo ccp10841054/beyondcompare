@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>&quot;Öffnen mit&quot;-Objekt bearbeiten</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?dlgopenwithitem.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">"Öffnen mit"-Objekt bearbeiten</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p>Geben Sie einen Namen im Feld <span class="f_Command">Beschreibung</span> ein, der im "Öffnen mit"-Menü erscheinen wird.</p>
+<p>Um ein Tastaturkürzel zu definieren, gehen Sie auf das Eingabefeld <span class="f_Command">Kürzel</span> und drücken Sie die gewünschte Tastenkombination.  Klicken Sie die Schaltfläche <span class="f_Command">Entfernen</span> an, um ein zugeordnetes Kürzel zu entfernen.</p>
+<p>Geben Sie zur Ausführung der Anwendung eine geeignete <span class="f_Command">Befehlszeile</span> ein.  Sie darf zur Anwendung passende Befehlszeilenschalter enthalten.  Die folgenden Variablen werden dabei mit den angegebenen Informationen ersetzt:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%f</p>
+</td>
+<td valign="top"><p>Absoluter Pfad und Dateiname</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%l</p>
+</td>
+<td valign="top"><p>(kleines L) Aktuelle Zeilennummer in Dateiansicht</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%n</p>
+</td>
+<td valign="top"><p>nur Dateiname</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%p</p>
+</td>
+<td valign="top"><p>Absoluter Pfad</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%x</p>
+</td>
+<td valign="top"><p>Erweiterung, inklusive "."</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%b</p>
+</td>
+<td valign="top"><p>Dateiname ohne Erweiterung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%F</p>
+</td>
+<td valign="top"><p>Pfad und Dateiname relativ zum Arbeitsordner</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%P</p>
+</td>
+<td valign="top"><p>Pfad relativ zum Arbeitsordner</p>
+</td>
+</tr>
+</table>
+</div>
+<p>"1" und "2" kann an das Ende der Variablen angehängt werden, um sich auf die linke/erste oder rechte/zweite Datei zu beziehen (z.B. "BCompare.exe %F2 %F1").  In jedem Fall, außer bei einem zweiten %f oder %l (für Rückwärtskompatibilität), wird sich das Auslassen einer Zahl auf die erste Datei beziehen, egal wieviele Male sie in der Befehlszeile aufgeführt ist.</p>
+<p>Das Eingabefeld <span class="f_Command">Arbeitsordner</span> ermöglicht Ihnen anzugeben, wo das Programm laufen soll (der "Ausführen in"-Ordner).  Sollte das Feld leer sein, wird das Programm im selben Arbeitsordner laufen wie Beyond Compare.  Sie können einen bestimmten Ordner angeben oder einen der speziellen Werte <span class="f_CourierFixed">&lt;Elternordner&gt;</span> und <span class="f_CourierFixed">&lt;Basisordner&gt;</span> aus der aufklappbaren Liste auswählen.  <span class="f_CourierFixed">&lt;Elternordner&gt;</span> wird den Elternordner der ausgewählten Datei verwenden, während <span class="f_CourierFixed">&lt;Basisordner&gt;</span> den Basisordner der ausgewählten Datei verwendet (bzw. den Elternordner in einer Dateiansicht).</p>
+<p>Verwenden Sie das Eingabefeld <span class="f_Command">Pfadtrennzeichen</span>, um alle Pfadtrennzeichen mit der angegebenen Zeichenfolge zu ersetzen.  Wenn das Feld leer bleibt, werden die üblichen Trennzeichen verwendet (z.B. umgekehrter Schrägstrich/Backslash (\) unter Windows).</p>
+<p>Die Kontrollkästchen <span class="f_Command">Akzeptiert Dateien</span> und <span class="f_Command">Akzeptiert Ordner</span> steuern, ob die Anwendung Dateien, Ordner oder beides annimmt.  Tipp: Sie können Beyond Compare selbst als zusätzliche Anwendung für Ordner konfigurieren.  Auf diese Weise können Sie Ordner auswählen und in einer weiteren Instanz von Beyond Compare vergleichen.</p>
+<p><span class="f_Command">Aktualisieren wenn fertig</span> führt eine Schnellaktualisierung aus, sobald Beyond Compare mit der Abarbeitung der "Öffnen mit"-Liste fertig ist.</p>
+<p>Wenn das Kontrollkästchen <span class="f_Command">Mehrfachinstanzen</span> markiert ist, können Sie mehrfache Dateien oder Dateipaare auswählen, und die Operation auf allen einmal pro Datei oder Dateipaar ausführen.  Mit dieser Option wird Beyond Compare prüfen, ob eine zweite Datei auf der Befehlszeile gegeben ist (z.B. "%x2").  Wenn ja, wird die Anwendung auf Paaren zu einer Zeit ausgeführt; ansonsten wird das Paar getrennt, und einmal für jede einzelne Datei des Paares ausgeführt.</p>
+<p><span class="f_Command">Auf das Ende der vorherigen Instanz warten</span> veranlasst, dass Beyond Compare mit der Ausführung des nächsten Befehls wartet bis der vorherige Befehl abgeschlossen ist.</p>
+
+</td></tr></table>
+
+</body>
+</html>

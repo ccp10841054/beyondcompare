@@ -1,0 +1,127 @@
+/* Text Styles */
+hr { color: #000000}
+body, table, tr, th /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Verdana';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-family: 'Arial';
+}
+span.f_Command /* Command */
+{
+ font-family: 'Tahoma';
+ font-weight: bold;
+ color: #333333;
+}
+span.f_Command2 /* Command2 */
+{
+ font-family: 'Tahoma';
+ font-weight: bold;
+ color: #ffffff;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_CourierFixed /* Courier Fixed */
+{
+ font-family: 'Courier New';
+}
+span.f_Definition /* Definition */
+{
+ font-style: italic;
+ color: #333399;
+}
+span.f_Hanging /* Hanging */
+{
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 18pt;
+ font-family: 'Lucida Sans';
+ font-weight: bold;
+ color: #ffffff;
+}
+span.f_ImageCaption /* Image Caption */
+{
+}
+span.f_Indented /* Indented */
+{
+}
+span.f_IndentedCode /* Indented Code */
+{
+ font-family: 'Courier New';
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_SingleSpaced /* Single Spaced */
+{
+}
+span.f_Subtitle /* Subtitle */
+{
+ font-weight: bold;
+ color: #000080;
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 14px 0px;
+}
+.p_CodeExample /* Code Example */
+{
+ margin: 0px 0px 0px 0px;
+}
+.p_Command /* Command */
+{
+ margin: 0px 0px 0px 0px;
+}
+.p_Command2 /* Command2 */
+{
+ margin: 0px 0px 0px 0px;
+}
+.p_Comment /* Comment */
+{
+}
+.p_Definition /* Definition */
+{
+}
+.p_Hanging /* Hanging */
+{
+ text-indent: -24px;
+ margin: 3px 0px 14px 24px;
+}
+.p_Heading1 /* Heading1 */
+{
+ margin: 10px 0px 5px 0px;
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_Indented /* Indented */
+{
+ margin: 3px 0px 14px 24px;
+}
+.p_IndentedCode /* Indented Code */
+{
+ margin: 0px 0px 0px 24px;
+}
+.p_Notes /* Notes */
+{
+}
+.p_SingleSpaced /* Single Spaced */
+{
+ margin: 0px 0px 0px 0px;
+}
+.p_Subtitle /* Subtitle */
+{
+ margin: 10px 0px 14px 0px;
+}

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>3-Wege-Merge-Konzepte</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="3-Wege-Merge,3-Wege-Merge Konzepte,Merge,Merge Konzepte" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?3_way_merge_concepts.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">3-Wege-Merge-Konzepte</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p><img src="pro.png" width="27" height="12" border="0" alt=""></p>
+<p>Eine Merge-Sitzung unterstützt Sie dabei, eine Reihe separater Änderungen zu einer neuen Version zusammenzuführen, und beide Mengen von Änderungen dort unterzubringen.</p>
+<p>Betrachten Sie zunächst einen einfachen 2-seitigen Vergleich, bei dem ein Objekt auf der einen Seite vorhanden ist, jedoch nicht auf der anderen.  Dem Programm ist es nicht möglich anzugeben, ob das Objekt auf der einen Seite neu hinzugefügt oder auf der anderen Seite gelöscht wurde:</p>
+<p style="margin: 8px 0px 16px 0px;"><img src="mergenobase.png" width="774" height="108" border="0" alt=""></p>
+<p>Sollte jedoch eine ältere Version der Daten verfügbar sein, ist mehr Information vorhanden, auf die die Merge-Entscheidungen gestützt werden können.  Beispielsweise kann für die Entscheidung, ob ein Objekt auf der einen Seite hinzugefügt oder von der anderen gelöscht wurde, eine ältere Kopie der Daten als Referenz verwendet werden:</p>
+<p><img src="mergebase.png" width="772" height="226" border="0" alt=""></p>
+<p>In diesem Falle kann Ihnen das Programm schnell und präzise die unabhängigen Modifikationen zusammenführen.  Dieses wird <span class="f_Definition">3-Wege-Merge</span> genannt.</p>
+<p>Jedoch können nicht alle Änderungen ohne gewissenhafte Prüfung sicher zusammengeführt werden.  Wenn ein und dieselbe Zeile auf beiden Seiten unabhängig geändert wurde (und die Änderungen voneinander verschieden sind), wird diese Zeile als <span class="f_Definition">Konflikt</span> gekennzeichnet, und benötigt eine manuelle Überprüfung.</p>
+
+</td></tr></table>
+
+</body>
+</html>

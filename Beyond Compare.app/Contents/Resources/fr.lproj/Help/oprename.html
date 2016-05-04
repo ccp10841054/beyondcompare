@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Renommer</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="renommer,renommer fichiers, dossiers" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?oprename.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">Renommer</span></p>
+<p class="p_Command2"><span class="f_Command2">Actions </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Renommer</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p>Dans le menu <span class="f_Command">Actions</span>, la commande <span class="f_Command">Renommer</span> <img src="rename.jpg" width="16" height="16" border="0" alt=""> renomme les fichiers et les dossiers sélectionnés.</p>
+<p>Dans la sous-section <span class="f_Command">Action</span>, vous pouvez sélectionner un renommage soit <span class="f_Command">Compatible DOS</span> ou <span class="f_Command">Expressions régulières</span>.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Renommage DOS</span></p>
+<p>Pour renommer des fichiers en utilisant des caractères génériques DOS, sélectionnez <span class="f_Command">Compatible DOS</span> dans le dialogue Renommer.  Dans le champ <span class="f_Command">Nouveau masque</span>, entrez le nouveau nom.</p>
+<p>Si plusieurs fichiers ou dossiers sont sélectionnés, un masque de base est calculé, masque qui représente l'intersection commune de tous les noms.  Un astérisque (*) est utilisée pour représenter un ou plusieurs caractères, tandis qu'un point d'interrogation (?) est utilisé pour représenter un seul caractère.  Laissez ces caractères seuls, mais changez les autres pour produire des noms uniques pour chacun des fichiers ou dossiers sélectionnés.</p>
+<p>Exemples :</p>
+<p>Supposez que vous avez sélectionné les fichiers suivants à renommer :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p>&nbsp;</p>
+<p>Si vous entrez "abc?.bak" dans le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p>&nbsp;</p>
+<p>Si vous entrez "xyz?.txt" pour le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+<p>&nbsp;</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Renommage via une expression régulière</span></p>
+<p>Pour renommer des fichiers en utilisant des <a href="regular_expression_reference.html">expressions régulières compatibles Perl</a>, cochez <span class="f_Command">Expressions régulières</span> dans le dialogue Renommer.  Dans le champ <span class="f_Command">Ancien masque</span>, entrez une expression régulière qui correspond au nom de fichier original.  Dans le champ <span class="f_Command">Nouveau masque</span>, entrez un modèle utilisé pour générer un nouveau nom de fichier.</p>
+<p>Exemples :</p>
+<p>Supposez que vous avez sélectionné les fichiers suivants à renommer :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p>&nbsp;</p>
+<p>Si vous entrez "txt" pour l'ancien masque et "bak" pour le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p>&nbsp;</p>
+<p>Si vous entrez ".*(\d\.txt)" pour l'ancien masque et "xyz$1" pour le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

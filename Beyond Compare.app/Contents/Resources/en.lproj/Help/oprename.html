@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Rename</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="rename,rename files, folders" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?oprename.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">Rename</span></p>
+<p class="p_Command2"><span class="f_Command2">Actions </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Rename</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p>In the <span class="f_Command">Actions</span> menu, the <span class="f_Command">Rename</span> <img src="rename.jpg" width="16" height="16" border="0" alt=""> command renames the selected files and folders.</p>
+<p>In the <span class="f_Command">Action</span> subsection, you can pick either <span class="f_Command">DOS compatible</span> or <span class="f_Command">Regular expressions</span> rename.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">DOS rename</span></p>
+<p>To rename files using DOS wildcards, pick <span class="f_Command">DOS compatible</span> in the Rename dialog.  In the <span class="f_Command">New mask</span> edit, enter the new name.</p>
+<p>If multiple files or folders are selected, a base mask is computed which represents the overlap of all the names.  An asterisk (*) is used to represent one or more characters, while a question mark (?) is used to represent a single character.  Leave these characters alone, but change others to produce unique names for each of the selected files or folders.</p>
+<p>Examples:</p>
+<p>Assume that you've selected the following files to rename:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p>&nbsp;</p>
+<p>If you enter "abc?.bak" as the new mask, the files will be renamed to:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p>&nbsp;</p>
+<p>If you enter "xyz?.txt" as the new mask, the files will be renamed to:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+<p>&nbsp;</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Regular expression rename</span></p>
+<p>To rename files using <a href="regular_expression_reference.html">Perl compatible regular expressions</a>, pick <span class="f_Command">Regular expressions</span> in the Rename dialog.  In the <span class="f_Command">Old mask</span> edit, enter a regular expression that is matched against the original filename.  In the <span class="f_Command">New mask</span> edit, enter a template used to generate a new filename.</p>
+<p>Examples:</p>
+<p>Assume that you've selected the following files to rename:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p>&nbsp;</p>
+<p>If you enter "txt" as the old mask and "bak" as the new mask, the files will be renamed to:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p>&nbsp;</p>
+<p>If you enter ".*(\d\.txt)" as the old mask and "xyz$1" as the new mask, the files will be renamed to:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

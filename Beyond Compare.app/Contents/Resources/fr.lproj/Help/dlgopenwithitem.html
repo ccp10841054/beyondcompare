@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Modifier un élément Ouvrir avec</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?dlgopenwithitem.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">Modifier un élément Ouvrir avec</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p>Entrez un nom dans le champ <span class="f_Command">Description</span> pour qu'il apparaisse dans le menu Ouvrir avec.</p>
+<p>Pour définir un raccourci clavier pour l'application, déplacez-vous dans le champ <span class="f_Command">Raccourci</span> et tapez la touche souhaitée.  cliquez sur le bouton <span class="f_Command">Enlever</span> pour enlever le raccourci attribué.</p>
+<p>Entrez une spécification appropriée de <span class="f_Command">Ligne de commande</span> pour exécuter l'application.  Elle peut inclure des commutateurs appropriés pour cette application.  Les variables suivantes seront remplacées par les informations indiquées :</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%f</p>
+</td>
+<td valign="top"><p>Chemin absolu et nom de fichier</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%l</p>
+</td>
+<td valign="top"><p>(L minuscule) Numéro de la ligne active dans une vue de fichiers</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%n</p>
+</td>
+<td valign="top"><p>Nom de fichier uniquement</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%p</p>
+</td>
+<td valign="top"><p>Chemin absolu</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%x</p>
+</td>
+<td valign="top"><p>Extension (inclut ".")</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%b</p>
+</td>
+<td valign="top"><p>Nom de fichier sans extension</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%F</p>
+</td>
+<td valign="top"><p>Le nom et le chemin relatif au dossier de travail</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="38" style="width:38px;"><p>%P</p>
+</td>
+<td valign="top"><p>Le chemin relatif au dossier de travail</p>
+</td>
+</tr>
+</table>
+</div>
+<p>"1" et "2" peuvent être ajoutés à la fin des variables pour se référer au fichier de gauche/droite ou au premier/deuxième fichier (ex. "BCompare %F2 %F1").  Dans tous les cas, excepté pour le deuxième %f ou %l (pour des raisons de compatibilité descendante), omettre un nombre réfère au premier fichier sans prendre en compte le nombre de fois qu'il apparaît dans la ligne de commande.</p>
+<p>Le champ <span class="f_Command">Dossier de travail</span> vous permet de modifier où le programme s'exécute (le dossier "Démarrer dans").  S'il est vide, le programme est exécuté dans le même dossier que Beyond Compare.  Vous pouvez spécifier un dossier spécifique, ou fournir les valeurs spéciales <span class="f_CourierFixed">&lt;dossier parent&gt;</span> et <span class="f_CourierFixed">&lt;dossier de base&gt;</span> de la liste déroulante.  <span class="f_CourierFixed">&lt;dossier parent&gt;</span> utilisera le dossier parent du fichier sélectionné, tandis que <span class="f_CourierFixed">&lt;dossier de base&gt;</span> utilisera le dossier de base du côté sélectionné (ou le dossier parent uniquement dans une vue de fichiers).</p>
+<p>Utilisez le champ <span class="f_Command">Délimiteur de chemin</span> pour remplacer tous les délimiteurs de chemins par la chaîne de caractères donnée.  Si laissé à blanc, les délimiteurs normaux seront utilisés (ex. antislash (\) sous Windows).</p>
+<p>Les cases à cocher <span class="f_Command">Accepte des fichiers</span> et <span class="f_Command">Accepte des dossiers</span> contrôlent quand l'application est disponible pour les fichiers, les dossiers ou les deux.  Astuce : Vous pouvez configurer Beyond Compare lui-même comme une application additionnelle pour les dossiers.  De cette façon, vous pourrez sélectionner des dossiers et les comparer dans une autre instance de Beyond Compare.</p>
+<p><span class="f_Command">Rafraîchir lorsque terminé</span> exécute un Rafraîchissement rapide lorsque Beyond Compare a terminé avec la liste Ouvrir avec.</p>
+<p>Lorsque la case <span class="f_Command">Instances multiples</span> est cochée, vous pouvez sélectionner de multiples fichiers ou des couples de fichiers, et exécuter l'opération sur chacun d'entre eux, ou par couple de fichiers alignés.  Avec cette option, Beyond Compare teste si un second fichier est indiqué sur la ligne de commande (ex. "%x2").  Si c'est le cas, l'application s'exécutera une fois avec chaque couple, autrement, il séparera le couple et s'exécutera pour chaque fichier sélectionné dans le couple.</p>
+<p><span class="f_Command">Attendre qu'une instance se termine</span> indique à Beyond Compare d'attendre que le programme précédent se termine avant de lancer la commande suivante.</p>
+
+</td></tr></table>
+
+</body>
+</html>

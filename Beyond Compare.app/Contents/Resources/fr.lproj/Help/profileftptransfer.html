@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Paramètres de transfert de profil FTP</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="transfert en mode ASCII,transfert en mode binaire,compresser les transferts,conversion de nom de fichier,FTP,FTP paramètres de transfert,limite la vitesse de téléchargement,horodatages,horodatages préserver lors du téléchargement" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?profileftptransfer.html"; }
+  else { parent.quicksync('a3.4.1.7'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Paramètres de transfert de profil FTP</span></p>
+<p class="p_Command2"><span class="f_Command2">Profil FTP </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Transférer</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="profileftplisting.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="profileftp.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="profileamazons3.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Ces paramètres contrôlent comment des fichiers sont transférés vers et à partir du serveur FTP.</p>
+<p class="p_Command"><span class="f_Command">Type de transfert</span></p>
+<p>Les sites FTP peuvent transférer les données de deux façons :  ASCII ou Binaire.  L'ASCII est utilisé pour transférer des fichiers texte qui n'ont aucun caractère spécial.  Le serveur FTP fera automatiquement les ajustements de fins de ligne nécessaires au mode ASCII.  Le mode ASCII gère aussi les transferts des unités centrales en convertissant l'EBCDIC en ASCII.  Le mode Binaire est utilisé pour transférer tous les autres fichiers, incluant les images, la musique, les documents Word, etc.  Dans le mode Binaire, aucune modification n'est effectuée au fichier pendant le transfert.</p>
+<p>Positionner le type de transfert à <span class="f_Command">ASCII</span> ou à <span class="f_Command">Binaire</span> forcera le transfert de tous les fichiers dans ce mode.  Si le type de transfert est <span class="f_Command">Auto</span>, Beyond Compare commutera automatiquement le mode en se basant sur l'extension de chaque fichier.</p>
+<p class="p_Command"><span class="f_Command">Copier l'horodatage lors du téléchargement</span></p>
+<p>Cochez pour forcer l'horodatage distant à correspondre à l'horodatage de la source.  Ne le décochez que si cela cause un problème avec le serveur.</p>
+<p class="p_Command"><span class="f_Command">Copier les autorisations Unix lors du téléchargement</span></p>
+<p>Cochez pour forcer les permissions de l'Unix distant à correspondre aux permissions de l'Unix source.  Ne le décochez que si cela cause un problème avec le serveur.</p>
+<p class="p_Command"><span class="f_Command">Compresser les transferts (MODE Z)</span></p>
+<p>Cochez pour utiliser une compression afin d'accélérer les transferts lorsque cela est supporté par le serveur.  Cela peut réellement ralentir le transfert sur des connexions rapides.</p>
+<p class="p_Command"><span class="f_Command">Limiter le téléchargement (Kbps)</span>, <span class="f_Command">Limiter l'envoi (Kbps)</span></p>
+<p>Spécifiez combien de bande passante Beyond Compare peut consommer pour chaque connexion.</p>
+<p class="p_Command"><span class="f_Command">Forcer des transferts plus rapides vers des serveurs OpenSSH anciens</span></p>
+<p>Cochez pour utiliser des tampons de transfert plus grands pour les serveurs OpenSSH antérieurs à OpenSSH v3.9.  Cela peut substantiellement augmenter la vitesse de transfert, mais n'est pas compatible avec tous les serveurs, et les erreurs ne sont pas évidentes.  Utiliser une comparaison binaire de contenu pour vérifier les premiers transferts après l'avoir coché.</p>
+<p><img src="note.png" width="12" height="12" border="0" alt=""><span class="f_Subtitle">Note  </span>Si vous avez besoin d'aide pour les paramètres de cette page, consultez votre administrateur système.</p>
+
+</td></tr></table>
+
+</body>
+</html>

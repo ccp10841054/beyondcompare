@@ -1,0 +1,309 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Référence d'Expression régulière</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="expressions régulières" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?regular_expression_reference.html"; }
+  else { parent.quicksync('a7'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Référence d'Expression régulière</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="scripting_reference.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="welcome.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="glossary.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Les expressions régulières sont une manière puissante de définir des modèles de recherche et d'appariement.  Beyond Compare vous permet d'utiliser des expressions régulières lors de recherche dans du texte, et lors de la spécification de règles pour classifier les textes.  Le support d'expression régulière dans Beyond Compare est un sous-ensemble de la syntaxe d'Expression Régulière Compatible Perl (PCRE, Perl Compatible Regular Expression).</p>
+<p>Alors que les expressions régulières peuvent être un thème complexe, il existe plusieurs excellentes ressources à leur sujet.  Une de ces ressources est un livre dont le titre est <span style="font-style: italic;">Mastering Regular Expressions</span>.  Une autre excellente ressource est <span style="font-style: italic;">A Tao of Regular Expressions</span> de Steve Mansour, une copie peut être trouvée à :</p>
+<p> &nbsp; &nbsp;  <a href="http://www.scootersoftware.com/RegEx.html" class="weblink">www.scootersoftware.com/RegEx.html</a></p>
+<p>Une expression régulière est composée de deux types de caractère :  les caractères normaux, et les méta-caractères.  Lors de l'exécution de recherche d'égalité, les méta-caractères ont une signification spéciale pour contrôler comment le test d'égalité sera fait, et servent de caractères génériques.  Les caractères normaux sont toujours comparés tels quels.  Pour comparer à un méta-caractère, déspécialiser-le ("<span style="font-style: italic;">escape</span>") de sa signification en le préfixant avec un antislash "\" (Caractère d'échappement, "Escape").  Il y a de nombreux types de méta-caractères, chacun étant détaillé ci-dessous.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Méta-caractères - Séquence d'échappement</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Séquence d'échappement</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\xnn</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">caractère de code hexa nn</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\x{nnnn}</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">caractère de code hexa nnnn</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\x{F000}</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">caractère de valeur nulle</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\t</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">tabulation (0x09)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\f</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">saut de page (0x0C)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\a</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">bip (0x07)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\e</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Échap. (0x1B)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle"><span class="f_Subtitle">Méta-caractères - Classes prédéfinies</span></p>
+<p>Les classes prédéfinies de caractère correspondent avec n'importe lequel d'un certain sous-ensemble de caractères.  Les classes suivantes sont déjà définies pour vous.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Classe</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">.</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">représente n'importe quel caractère</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\w</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">tout caractère alphanumérique ou _</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\W</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">tout caractère non alphanumérique</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\d</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">tout caractère numérique (0-9)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\D</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">tout caractère non numérique</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\s</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">tout espace blanc (espace, tabulation, retour chariot)</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Vous pouvez aussi construire vos propres classes de caractères en entourant le groupe de caractères entre crochets "[]".  Les classes prédéfinies (excepté ".") peuvent être utilisées entre les crochets, et si un tiret "-" apparaît entre deux caractères, cela représente un intervalle.  Donc [a-z] représente toutes les lettres minuscules, et [a-zA-Z] représente les lettres minuscules et majuscules.  Pour inclure un "-" dans la classe, placez-le au début ou à la fin de la chaîne de caractères.</p>
+<p>Si le premier caractère entre les crochets est un accent circonflexe "^", alors la classe représente tous les caractères excepté ceux qui sont spécifiés.  [^a-z] représente tous les caractères qui ne sont pas des caractères alphabétiques minuscules.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Méta-caractères - Alternatives</span></p>
+<p>En plaçant un "|" entre deux groupes d'éléments, des correspondances alternatives peuvent être représentées.  a|b correspondra à a ou b.  ab|cd correspondra à "ab" ou "cd", mais pas à "ac".  "|" regroupe les caractères à partir du délimiteur de la séquence ("(", "[" ou le début de la séquence) jusqu'à elle-même, et ensuite jusqu'à la fin de la séquence.  Des alternatives peuvent être placées entre parenthèses "()" pour faire en sorte que ce que l'on recherche soit évident, comme dans a(bc|de)f.  Les alternatives sont appariées de gauche à droite.  bey|beyond correspondra à bey, même si la chaîne de caractères est "beyond".</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Méta-caractères - Ancrage (Position)</span></p>
+<p>Les méta-caractères suivants contrôlent où la correspondance doit avoir lieu sur une ligne.  Note : \A et \Z correspondent  respectivement avec le début et la fin du texte, mais comme Beyond Compare exécute la recherche sur la base d'une ligne, ceux-ci ont le même effet que ^ et $.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Méta-caractère</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">correspond uniquement avec le début de la ligne</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">correspond uniquement avec la fin de la ligne</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle"><span class="f_Subtitle">Méta-caractères - Répétitions</span></p>
+<p>N'importe quoi dans une expression régulière peut être suivi par un méta-caractère de répétition (opérateur itératif) qui s'applique à l'élément précédent.  Il y a deux types de répétition - gourmande ("greedy") ou non gourmande.  Les répétitions gourmandes correspondent avec autant de caractères qu'elles peuvent, les non-gourmandes avec aussi peu qu'elles peuvent.</p>
+<p>Gourmande :</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Méta-caractère</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">*</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne zéro ou plusieurs fois le caractère précédent (équivalent à {0,})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">+</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne une ou plusieurs fois le caractère précédent (équivalent à {1,})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne zéro ou une fois (équivalent à {0,1})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">{n}</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne exactement n fois (équivalent à {n,n})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">{n,}</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne n fois ou plus</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">{n,m}</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne au moins n fois mais pas plus que m fois</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Non gourmande :</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Méta-caractère</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">*?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne zéro ou plusieurs fois</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">+?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne une ou plusieurs fois</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">??</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne zéro ou une fois</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">{n}?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne exactement n fois</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">{n,}?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne au moins n fois</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">{n,m}?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">désigne au moins n fois mais pas plus que m fois</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle"><span class="f_Subtitle">Méta-caractères - Sous-expressions</span></p>
+<p>Les parenthèses "()" peuvent également être utilisées pour grouper des caractères afin de les utiliser avec des itérations et des références arrières (discutées ci-dessous).  (bey){4,5} correspondra à 4 et à 5 fois les occurrences de "bey".  (abc|[0-9])* correspondra à n'importe quelle combinaison de "abc" et des chiffres de 0 à 9 (ex. "abc5", "679abc" et "abc77abc").</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Méta-Caractères - Références arrières</span></p>
+<p>Chaque séquence de caractères qui correspond dans un groupe "()" sera sauvegardée comme une sous-expression à laquelle vous pourrez vous référer plus tard avec \1 à \9, qui se réfèrent aux sous-expressions de gauche à droite.  b(.)\1n correspondra à "been" et à "boon", mais pas à "bean", ni à "ben" ou "beeen".</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Modificateurs</span></p>
+<p>Les modificateurs permettent de modifier le comportement de la correspondance à partir de ce point.  Si le modificateur est contenu dans une sous-expression, il affecte uniquement cette sous-expression.  Utilisez (?i) et (?-i) pour contrôler la sensibilité à la casse de la correspondance.</p>
+<p>Exemples :</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced"> &nbsp;(?i)Beyond Compare</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">correspond avec "Beyond Compare" et "beyond compare"</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced"> &nbsp;(?i)Beyond (?-i)Compare</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">correspond avec "Beyond Compare" et "bEyOnD Compare", mais pas "beyond compare"</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_SingleSpaced"><span class="f_SingleSpaced">&nbsp;</span></p>
+<p class="p_SingleSpaced"><span style="font-weight: bold;">Voir également</span></p>
+<p class="p_SingleSpaced"><a href="sample_regular_expressions.html">Exemples d'expressions régulières</a></p>
+
+</td></tr></table>
+
+</body>
+</html>

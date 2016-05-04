@@ -1,0 +1,152 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Dateimasken</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Dateimasken" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?file_masks.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <p class="p_Heading1"><span class="f_Heading1">Dateimasken</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p>Eine Dateimaske ist ein Muster von Zeichen und Wildcards (Jokerzeichen bzw. Platzhalterzeichen), welches Namen von Ordnern und Dateien darstellen soll.</p>
+<p>Beispiel:  *.* stimmt mit jedem Dateinamen überein.  Aus historischen Gründen stimmt diese Maske sogar mit jenen Dateinamen überein, die keine Dateierweiterung besitzen.</p>
+<p>Beispiel:  *.html stimmt mit jedem HTML-Dateinamen überein.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Wildcards (Jokerzeichen)</span></p>
+<p>Wildcards ermöglichen der Dateimaske mit einer Vielzahl von Ordner- oder Dateinamen übereinzustimmen.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>?</p>
+</td>
+<td valign="top"><p>Stimmt mit beliebigem einzelnen Zeichen überein.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>*</p>
+</td>
+<td valign="top"><p>Stimmt mit null oder jeder anderen Anzahl beliebiger Zeichen überein.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[az]</p>
+</td>
+<td valign="top"><p>Stimmt mit beliebigem einzelnen Zeichen in der angegebenen Menge überein (a oder z).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[a-z]</p>
+</td>
+<td valign="top"><p>Stimmt mit beliebigem einzelnen Zeichen aus dem angegebenen Bereich überein (von a bis z).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[!az]</p>
+</td>
+<td valign="top"><p>Stimmt mit beliebigem einzelnen Zeichen überein, welches nicht in der angegebenen Menge enthalten ist (nicht a und nicht z).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>[[]</p>
+</td>
+<td valign="top"><p>Stimmt mit einzelnem [ Zeichen überein.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Beispiel:  A? stimmt mit A gefolgt von einem einzelnen beliebigen Zeichen überein.</p>
+<p>Beispiel:  A* stimmt mit A gefolgt von beliebigen Zeichen überein.</p>
+<p>Beispiel:  [a-z0-9] stimmt mit einem beliebigen Buchstaben oder Ziffer überein.</p>
+<p>Beispiel:  [!ac-g] stimmt mit einem beliebigen Zeichen überein, welches ungleich a, c, d, e, f und g ist.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Einfache Dateimasken</span></p>
+<p>Einfache Dateimasken beeinflussen alle Dateien oder Ordner deren Elternordner einbezogen ist.  Der Basisordner ist stets einbezogen.  Sämtliche Ordner, die einbezogene Dateien enthalten, sind ebenfalls einbezogen.</p>
+<p>Um bestimmte Objekte auszuschließen, statt sie einzubeziehen, stellen Sie der Dateimaske in dem Eingabefeld <span class="f_Command">Filter</span> ein Minuszeichen (-) voran.  Im Dateifilter-Dialog platzieren Sie die Dateimaske in das Ausschließen-Eingabefeld, statt das Minuszeichen zu verwenden.</p>
+<p>Wenn das letzte Zeichen in der Dateimaske ein Punkt (.) ist, dann werden die Wildcards ? und * nicht mit Punkten übereinstimmen, um Filterung nach Dateien ohne Dateierweiterung zu ermöglichen.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>f</p>
+</td>
+<td valign="top"><p>alle Dateien namens f einbeziehen.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>p\</p>
+</td>
+<td valign="top"><p>alle Ordner namens p einbeziehen.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>-f</p>
+</td>
+<td valign="top"><p>alle Dateien namens f ausschließen.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>-p\</p>
+</td>
+<td valign="top"><p>alle Ordner namens p ausschließen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Beispiel:  *.pas;*.dfm;*.dpr bezieht lediglich Dateien mit den Erweiterungen pas, dfm oder dpr ein.</p>
+<p>Beispiel:  quelle\ bezieht nur Ordner namens quelle und seine Unterordner mit ein.</p>
+<p>Beispiel:  -*.dcu;-*.ddp schließt Dateien mit den Erweiterungen dcu oder ddp aus.</p>
+<p>Beispiel:  -sicherung\ schließt Ordner namens sicherung aus.</p>
+<p>Beispiel:  *. bezieht nur Dateien ohne eine Erweiterung ein.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Relative Dateimasken</span></p>
+<p>Relative Dateimasken beeinflussen Dateien oder Ordner an bestimmten Ablageorten.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>p\f</p>
+</td>
+<td valign="top"><p>f muss im Ordner p sein.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>.\f</p>
+</td>
+<td valign="top"><p>f muss im Basisordner sein.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="58" style="width:58px;"><p>...\f</p>
+</td>
+<td valign="top"><p>f kann null oder mehr Eltern-Ordner haben.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Beispiel:  Windows\*.txt bezieht sich auf jede txt-Datei in jedem enthaltenen Ordner namens Windows.</p>
+<p>Beispiel:  ...\Windows\*.txt bezieht sich auf jede txt-Datei in jedem Ordner namens Windows.</p>
+<p>Beispiel:  .\Windows\*.txt bezieht sich auf jede txt-Datei in einem Ordner namens Windows, der im Basisordner enthalten ist.</p>
+
+</td></tr></table>
+
+</body>
+</html>

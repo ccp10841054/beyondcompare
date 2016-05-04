@@ -1,0 +1,173 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Beispiele für reguläre Ausdrücke</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Reguläre Ausdrücke" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?sample_regular_expressions.html"; }
+  else { parent.quicksync(''); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Beispiele für reguläre Ausdrücke</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <img src="prev-dis.png" border=0 alt="Previous"
+        ><a href="welcome.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><img src="next-dis.png" border=0 alt="Next">
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Ausdruck</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Bedeutung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^abc</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit Text überein, der "abc" am Zeilenanfang hat</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">abc$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit Text überein, der "abc" am Zeilenende hat</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^abc$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit der Zeile "abc" exakt überein</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^\s*abc</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit Text überein, der "abc" am Zeilenanfang hat, wobei führende Leerzeichen (Whitespaces) erlaubt sind</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^\s*end;?\s*$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit Text überein, der nur "end" oder "end;" enthält, wobei führende und abschließende Leerzeichen erlaubt sind</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">abc|def</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit "abc" oder "def" überein</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">a(b|c)d</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit "abd" oder "acd" überein</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">a(b|c)d\1</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Stimmt mit "abdb" oder "acdc" überein, jedoch nicht mit "abdc"</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle" style="margin: 0px 0px 0px 0px;"><span class="f_Subtitle">&nbsp;</span></p>
+<p class="p_Subtitle"><span class="f_Subtitle">In den obigen Beispielen verwendete Steuerzeichen</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Zeichen</p>
+</td>
+<td valign="top" bgcolor="#dadada" style="background-color:#dadada; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Bedeutung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">^</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Zeilenanfang</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">$</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Zeilenende</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\s</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Leerzeichen (Whitespace) (ein Tab oder Leerschritt)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">*</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">0 oder mehr des vorangehenden Zeichens</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">?</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Vorangehendes Zeichen ist optional</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">|</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Alternativer Ausdruck</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">( )</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Unterausdruck</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">\1</p>
+</td>
+<td valign="top" bgcolor="#eeeeee" style="background-color:#eeeeee; border: solid 2px #ffffff;"><p class="p_SingleSpaced">Rückreferenz auf ersten Unterausdruck</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 0px 0px;">&nbsp;</p>
+<p class="p_SingleSpaced"><span style="font-weight: bold;">Siehe auch</span></p>
+<p class="p_SingleSpaced" style="margin: 0px 0px 14px 0px;"><a href="regular_expression_reference.html">Referenz Regulärer Ausdrücke</a></p>
+
+</td></tr></table>
+
+</body>
+</html>
